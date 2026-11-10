@@ -15,15 +15,15 @@ Build:
 
 Pull the iamge:
 ```
-docker pull ghcr.io/pinoutltd/libp2p-ws-proxy:latest
+docker pull ghcr.io/pinoutlimited/libp2p-ws-proxy:latest
 ```
 
 Launch:
 
 To enable access to the WebSocket server from another application, it is essential to establish a port mapping between the host and the container. While not mandatory, it is advisable to align the port numbers in the container and on the host.
 ```
-curl -o- https://raw.githubusercontent.com/PinoutLTD/libp2p-ws-proxy/refs/heads/main/setup.sh | bash
-docker run --name libp2p-proxy --detach --network host -v ./config:/proxy/config -p 127.0.0.1:8888:8888 -p 127.0.0.1:9999:9999 ghcr.io/pinoutltd/libp2p-ws-proxy:latest
+curl -o- https://raw.githubusercontent.com/PinoutLimited/libp2p-ws-proxy/refs/heads/main/setup.sh | bash
+docker run --name libp2p-proxy --detach --network host -v ./config:/proxy/config -p 127.0.0.1:8888:8888 -p 127.0.0.1:9999:9999 ghcr.io/pinoutlimited/libp2p-ws-proxy:latest
 ```
 
 To see logs:
@@ -46,7 +46,7 @@ Requirements:
 Installation:
 
 ```
-git clone https://github.com/PinoutLTD/libp2p-ws-proxy.git
+git clone https://github.com/PinoutLimited/libp2p-ws-proxy.git
 cd libp2p-ws-proxy
 npm install
 ```
