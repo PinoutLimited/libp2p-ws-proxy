@@ -4,7 +4,7 @@ if [ ! -f config/config.json ]; then
   echo "Копируем дефолтную конфигурацию..."
   mkdir config
 
-  URL="https://raw.githubusercontent.com/PinoutLTD/libp2p-ws-proxy/refs/heads/main/config/config.template.json"
+  URL="https://raw.githubusercontent.com/PinoutLimited/libp2p-ws-proxy/refs/heads/main/config/config.template.json"
   OUTPUT="config/config.json"
 
   echo "Скачивание файла с $URL ..."
